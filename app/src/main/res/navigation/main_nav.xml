@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/splashScreen">
+    <fragment
+        android:id="@+id/helloFragment"
+        android:name="com.torrydo.beenalone.fragment.HelloFragment"
+        android:label="fragment_hello"
+        tools:layout="@layout/fragment_hello" >
+        <action
+            android:id="@+id/action_helloFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/open_fade"
+            app:exitAnim="@anim/exit_fade"
+            app:popUpTo="@id/helloFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_helloFragment_to_customDatePickerFragment"
+            app:destination="@id/customDatePickerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.torrydo.beenalone.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_game_2040_Fragment"
+            app:destination="@id/game_2040_Fragment"
+            app:enterAnim="@anim/open_fade"
+            app:exitAnim="@anim/exit_fade" />
+        <action
+            android:id="@+id/action_mainFragment_to_customDatePickerFragment"
+            app:destination="@id/customDatePickerFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_dashboardBottomFragment"
+            app:destination="@id/dashboardBottomFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_rankBottomFragment"
+            app:destination="@id/rankBottomFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen"
+        android:name="com.torrydo.beenalone.SplashScreen"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreen_to_helloFragment"
+            app:destination="@id/helloFragment"
+            app:enterAnim="@anim/open_fade_fast"
+            app:exitAnim="@anim/exit_fade_fast"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_splashScreen_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:enterAnim="@anim/open_fade"
+            app:exitAnim="@anim/exit_fade"
+            app:popUpTo="@id/splashScreen"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <dialog
+        android:id="@+id/customDatePickerFragment"
+        android:name="com.torrydo.beenalone.bottomFragment.CustomDatePickerFragment"
+        android:label="fragment_custom_date_picker"
+        tools:layout="@layout/fragment_custom_date_picker" />
+    <fragment
+        android:id="@+id/game_2040_Fragment"
+        android:name="com.torrydo.beenalone.fragment.games.g_2048.Game_2040_Fragment"
+        android:label="fragment_game_2040"
+        tools:layout="@layout/fragment_game_2048" />
+    <dialog
+        android:id="@+id/dashboardBottomFragment"
+        android:name="com.torrydo.beenalone.bottomFragment.DashboardBottomFragment"
+        android:label="fragment_dashboard_bottom"
+        tools:layout="@layout/fragment_dashboard_bottom" />
+    <dialog
+        android:id="@+id/rankBottomFragment"
+        android:name="com.torrydo.beenalone.bottomFragment.RankBottomFragment"
+        android:label="fragment_rank_bottom"
+        tools:layout="@layout/fragment_rank_bottom" />
+</navigation>

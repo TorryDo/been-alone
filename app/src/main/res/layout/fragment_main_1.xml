@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main1_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/fragment_main_1_scene"
+    android:background="@color/system_background_darker"
+    tools:context=".fragment.Main_1_Fragment">
+
+    <ImageView
+        android:id="@+id/main1_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:scaleType="centerCrop"
+        android:alpha="0"
+        />
+
+    <include
+        android:id="@+id/main1_reuse_cat_avatar"
+        layout="@layout/reuse_cat_avatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/main1_lottie_typing"
+        android:layout_width="70dp"
+        android:layout_height="0dp"
+
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/main1_reuse_cat_avatar"
+
+        app:layout_constraintStart_toEndOf="@id/main1_reuse_cat_avatar"
+        app:layout_constraintTop_toTopOf="@id/main1_reuse_cat_avatar"
+        app:lottie_rawRes="@raw/typing"
+        />
+
+    <View
+        android:id="@+id/main1_messenger"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="15dp"
+        android:alpha="1"
+        android:background="@drawable/messenger"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="@id/main1_reuse_cat_avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/main1_reuse_cat_avatar"
+        app:layout_constraintTop_toTopOf="@id/main1_reuse_cat_avatar"
+
+        />
+
+    <TextView
+        android:id="@+id/main1_messenger_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="15dp"
+        android:textColor="@color/text_color_default"
+        android:visibility="gone"
+
+        app:layout_constraintBottom_toBottomOf="@id/main1_messenger"
+        app:layout_constraintEnd_toEndOf="@id/main1_messenger"
+        app:layout_constraintStart_toStartOf="@id/main1_messenger"
+        app:layout_constraintTop_toTopOf="@id/main1_messenger" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/main1_main"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
+        android:alpha="1"
+        android:backgroundTint="@color/system_background"
+        app:cardCornerRadius="@dimen/default_round_corner"
+        app:cardElevation="@dimen/default_elevation"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main1_reuse_cat_avatar" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main1_GL_1_Vertical"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/main1_avatar"
+        android:layout_width="@dimen/circle_avatar_size"
+        android:layout_height="@dimen/circle_avatar_size"
+
+        android:layout_margin="20dp"
+        android:alpha="1"
+        android:elevation="@dimen/default_elevation"
+        android:src="@mipmap/beenalone"
+
+        app:layout_constraintEnd_toEndOf="@id/main1_main"
+        app:layout_constraintStart_toStartOf="@id/main1_main"
+        app:layout_constraintTop_toTopOf="@id/main1_main" />
+
+    <ImageView
+        android:id="@+id/main1_frame"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+
+        android:background="@drawable/frame_king"
+
+        android:elevation="@dimen/default_elevation"
+
+        app:layout_constraintBottom_toBottomOf="@id/main1_avatar"
+        app:layout_constraintEnd_toEndOf="@id/main1_avatar"
+        app:layout_constraintStart_toStartOf="@id/main1_avatar"
+        app:layout_constraintTop_toTopOf="@id/main1_avatar"
+
+        />
+
+    <TextView
+        android:id="@+id/main1_rank"
+        android:layout_width="@dimen/rank_width"
+        android:layout_height="20dp"
+
+        android:layout_marginEnd="10dp"
+        android:alpha="1"
+        android:background="@drawable/rank_frame"
+        android:backgroundTint="@color/rank_color"
+        android:elevation="@dimen/default_elevation"
+        android:gravity="center"
+        android:text="@string/main1_rank_title"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+
+        app:layout_constraintEnd_toStartOf="@id/main1_avatar"
+        app:layout_constraintStart_toStartOf="@id/main1_main"
+        app:layout_constraintTop_toTopOf="@id/main1_avatar" />
+
+    <View
+        android:id="@+id/main1_rank_view"
+        android:layout_width="@dimen/rankview_width"
+        android:layout_height="50dp"
+
+        android:alpha="1"
+        android:background="@drawable/rank_theme"
+        android:backgroundTint="@color/theme_rank_color"
+        android:elevation="@dimen/default_elevation"
+
+        app:layout_constraintEnd_toEndOf="@id/main1_rank"
+        app:layout_constraintStart_toStartOf="@id/main1_rank"
+        app:layout_constraintTop_toBottomOf="@id/main1_rank" />
+
+    <ImageView
+        android:id="@+id/main1_rank_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:src="@drawable/ic_peasant"
+        android:elevation="@dimen/default_elevation"
+        android:padding="@dimen/padding_small"
+        android:alpha="1"
+
+        app:layout_constraintTop_toTopOf="@id/main1_rank_view"
+        app:layout_constraintBottom_toBottomOf="@id/main1_rank_view"
+        app:layout_constraintStart_toStartOf="@id/main1_rank_view"
+        app:layout_constraintEnd_toEndOf="@id/main1_rank_view"
+        />
+
+    <TextView
+        android:id="@+id/main1_txt_lvl_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:alpha="1"
+        android:elevation="@dimen/default_elevation"
+        android:gravity="center"
+        android:text="@string/main1_level"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_default"
+
+        app:layout_constraintEnd_toEndOf="@id/main1_layout"
+        app:layout_constraintStart_toEndOf="@id/main1_avatar"
+        app:layout_constraintTop_toTopOf="@id/main1_avatar" />
+
+    <TextView
+        android:id="@+id/main1_txt_lvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="10dp"
+        android:alpha="1"
+        android:elevation="@dimen/default_elevation"
+        android:gravity="center"
+        android:textSize="@dimen/default_big_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_default"
+
+        app:layout_constraintEnd_toEndOf="@id/main1_layout"
+        app:layout_constraintStart_toEndOf="@id/main1_avatar"
+        app:layout_constraintTop_toBottomOf="@id/main1_txt_lvl_title" />
+
+    <TextView
+        android:id="@+id/main1_txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:alpha="1"
+        android:elevation="@dimen/default_elevation"
+        android:text="unknown"
+        android:textSize="@dimen/default_big_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_default"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main1_avatar" />
+
+    <TextView
+        android:id="@+id/main1_txt_name_bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:alpha="0"
+        android:elevation="@dimen/default_elevation"
+        android:text="unknown"
+        android:textSize="@dimen/default_big_text_size"
+        android:textStyle="bold"
+        android:textColor="@color/text_color_default"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/main1_txt_name"
+        app:layout_constraintBottom_toBottomOf="@id/main1_txt_name"
+        />
+
+    <TextView
+        android:id="@+id/main1_txt_counter_title"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+
+        android:layout_marginStart="10dp"
+        android:alpha="1"
+        android:elevation="@dimen/default_elevation"
+        android:gravity="center"
+        android:text="@string/main1_alonefor"
+        android:backgroundTint="@color/text_color_default"
+
+        app:layout_constraintBottom_toBottomOf="@id/main1_txt_counter"
+        app:layout_constraintStart_toStartOf="@id/main1_main"
+        app:layout_constraintTop_toTopOf="@id/main1_txt_counter" />
+
+    <TextView
+        android:id="@+id/main1_txt_counter"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+
+        android:layout_marginTop="15dp"
+        android:alpha="1"
+        android:background="@drawable/custom_date_picker_button"
+        android:elevation="@dimen/default_elevation"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:text="@string/main1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/default_big_text_size"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="@id/main1_main"
+        app:layout_constraintStart_toStartOf="@id/main1_main"
+        app:layout_constraintTop_toBottomOf="@id/main1_txt_name"
+        app:layout_constraintBottom_toBottomOf="@null"
+        />
+
+    <TextView
+        android:id="@+id/main1_txt_alonefrom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:layout_marginTop="25dp"
+        android:alpha="1"
+        android:elevation="@dimen/default_elevation"
+        android:gravity="center"
+        android:text="@string/main1_alonefrom"
+        android:textColor="@color/text_color_default"
+
+        app:layout_constraintBottom_toTopOf="@id/main1_txt_exp_title"
+        app:layout_constraintEnd_toEndOf="@id/main1_GL_1_Vertical"
+        app:layout_constraintStart_toStartOf="@id/main1_main"
+        app:layout_constraintTop_toBottomOf="@id/main1_txt_counter"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/main1_txt_exp_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:alpha="1"
+        android:elevation="@dimen/default_elevation"
+        android:gravity="center"
+        android:text="@string/main1_exp"
+        android:textColor="@color/text_color_default"
+
+        app:layout_constraintBottom_toBottomOf="@id/main1_main"
+        app:layout_constraintEnd_toEndOf="@id/main1_GL_1_Vertical"
+        app:layout_constraintStart_toStartOf="@id/main1_main"
+        app:layout_constraintTop_toBottomOf="@id/main1_txt_alonefrom"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/main1_txt_rank_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:alpha="1"
+        android:elevation="@dimen/default_elevation"
+        android:gravity="center"
+        android:text="@string/main1_rank"
+        android:textColor="@color/text_color_default"
+
+        app:layout_constraintBottom_toTopOf="@id/main1_txt_coin_title"
+        app:layout_constraintEnd_toEndOf="@id/main1_main"
+        app:layout_constraintStart_toEndOf="@id/main1_GL_1_Vertical"
+        app:layout_constraintTop_toTopOf="@id/main1_txt_alonefrom"
+        app:layout_constraintVertical_weight="1" />
+
+    <TextView
+        android:id="@+id/main1_txt_coin_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:alpha="1"
+        android:elevation="@dimen/default_elevation"
+        android:gravity="center"
+        android:text="@string/main1_currency"
+        android:textColor="@color/text_color_default"
+
+        app:layout_constraintBottom_toBottomOf="@id/main1_main"
+        app:layout_constraintEnd_toEndOf="@id/main1_main"
+        app:layout_constraintStart_toStartOf="@id/main1_GL_1_Vertical"
+        app:layout_constraintTop_toBottomOf="@id/main1_txt_rank_title"
+        app:layout_constraintVertical_weight="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/main1_GL_2_Horizontal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+
+        app:layout_constraintGuide_percent="0.75" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/main1_minimize"
+        android:layout_width="@dimen/icon_size_bigger"
+        android:layout_height="@dimen/icon_size_bigger"
+
+        android:layout_marginTop="@dimen/margin_top"
+        app:cardElevation="@dimen/default_elevation"
+        app:cardCornerRadius="@dimen/default_round_corner"
+        android:alpha="1"
+        android:background="@color/system_background"
+
+        app:layout_constraintTop_toBottomOf="@id/main1_main"
+        app:layout_constraintStart_toStartOf="@id/main1_main"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/ic_minimize"
+            android:layout_margin="5dp"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/main1_maximize"
+        android:layout_width="@dimen/icon_size_bigger"
+        android:layout_height="@dimen/icon_size_bigger"
+
+        android:layout_marginBottom="@dimen/margin_top"
+        app:cardElevation="@dimen/default_elevation"
+        app:cardCornerRadius="@dimen/default_round_corner"
+        android:alpha="0"
+        android:background="@color/system_background"
+
+        app:layout_constraintBottom_toTopOf="@id/main1_main"
+        app:layout_constraintEnd_toEndOf="@id/main1_main"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/ic_maximize"
+            android:layout_margin="5dp"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/main1_choose_img"
+        android:layout_width="@dimen/icon_size_bigger"
+        android:layout_height="@dimen/icon_size_bigger"
+
+        android:layout_marginBottom="@dimen/margin_top"
+        app:cardElevation="@dimen/default_elevation"
+        app:cardCornerRadius="@dimen/default_round_corner"
+        android:alpha="0"
+        android:layout_marginEnd="@dimen/margin_medium"
+        android:background="@color/system_background"
+
+        app:layout_constraintBottom_toTopOf="@id/main1_main"
+        app:layout_constraintEnd_toStartOf="@id/main1_maximize"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/ic_plus"
+            android:layout_margin="5dp"
+            />
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

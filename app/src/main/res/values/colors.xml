@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="default_color">#ffffff</color>
+    <color name="text_color_default">#000000</color>
+    <color name="text_color_default_invert">#ffffff</color>
+    <color name="hint_text_color_default">#616161</color>
+    <color name="text_color">#6552DF</color>
+    <color name="system_background">#ffffff</color>
+    <color name="system_background_darker">#ffffff</color>
+    <color name="system_background2">#ffffff</color>
+    <color name="system_background2_darker">#A5A5A5</color>
+    <color name="text_color_light">#ffffff</color>
+    <color name="text_color_black">#000000</color>
+    <color name="text_color_black_lighter">#232323</color>
+
+    <color name="white_gray">#f5f5f5</color>
+    <color name="gray">#e3e3e3</color>
+    <color name="grey_darker">#e3e3e3</color>
+
+    <color name="super_light_maincolor">#F8F7FF</color>
+    <color name="main_color_lighter">#8E81E8</color>
+    <color name="main_color">#7868e6</color>
+    <color name="main_color_darker">#6552DF</color>
+
+    <color name="super_light_main2color">#FFE1F2</color>
+    <color name="main_color2_lighter">#FDB5DD</color>
+    <color name="main_color2">#f8a1d1</color>
+    <color name="main_color2_darker">#e36bae</color>
+
+    <color name="dark_gray_lighter">#B7BAC8</color>
+    <color name="dark_gray">#a6a9b6</color>
+    <color name="dark_gray_darker">#83868F</color>
+    <color name="dark_grey_darkest">#73757C</color>
+    <color name="white_red">#F69C8C</color>
+    <color name="white_pink">#EEBAFA</color>
+    <color name="white_blue">#AFDBFD</color>
+    <color name="white_orange">#FDB2B2</color>
+    <color name="white_yellow">#FFDBAD</color>
+    <color name="green">#67E867</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="alert_red">#eb5757</color>
+    <color name="alert_red_lighter">#EC6464</color>
+    <color name="alert_green">#6fcf97</color>
+    <color name="alert_green_lighter">#8EEAB4</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="frame_color">#FBDE3D</color>
+    <color name="rank_color">#FFDF30</color>
+    <color name="theme_rank_color">#FFF3B2</color>
+
+
+<!--    item-->
+    <color name="coin_color">#D5B923</color>
+    <color name="fb_background">#475993</color>
+    <color name="fb_txt_color">#ffffff</color>
+    <color name="gg_background">#EFEFEF</color>
+    <color name="gg_txt_color">#000000</color>
+    <color name="switch_color_foreground">#42221f1f</color>
+
+<!--    rank-->
+    <color name="peasant">#6E4437</color>
+    <color name="peasant_lighter">#AC7362</color>
+    <color name="trooper">#7eca9c</color>
+    <color name="trooper_lighter">#ccffbd</color>
+    <color name="warrior">#d44000</color>
+    <color name="warrior_lighter">#E88A61</color>
+    <color name="mage">#440a67</color>
+    <color name="mage_lighter">#883FB5</color>
+    <color name="adventurer">#206a5d</color>
+    <color name="adventurer_lighter">#82D1C3</color>
+    <color name="noble">#aa2b1d</color>
+    <color name="noble_lighter">#E1766A</color>
+    <color name="philosopher">#51c4d3</color>
+    <color name="philosopher_lighter">#99EBF6</color>
+    <color name="king">#EFD95A</color>
+    <color name="king_lighter">#faf8ef</color>
+
+<!--    game 2048-->
+    <color name="color_2048">#EFD95A</color>
+    <color name="background_g2048">#faf8ef</color>
+
+<!--    game btm-->
+    <color name="color_btm">#9A6858</color>
+</resources>

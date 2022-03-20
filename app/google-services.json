@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "561264450708",
+    "project_id": "lonelycatdb",
+    "storage_bucket": "lonelycatdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561264450708:android:7081048bc61c4f4d5c2881",
+        "android_client_info": {
+          "package_name": "com.torrydo.beenalone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561264450708-4p9uel2rn5c4u7929br7ovavtdpoqepb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.torrydo.beenalone",
+            "certificate_hash": "a86b898537c3e7958c7192aa10729596f57ccbaa"
+          }
+        },
+        {
+          "client_id": "561264450708-9l82to8o5fabdthmjr66keci04jtu6qn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjkEg141vmWTLijKfYaSxGKKMvUlzN5Os"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561264450708-9l82to8o5fabdthmjr66keci04jtu6qn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

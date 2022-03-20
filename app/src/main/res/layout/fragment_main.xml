@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.MainFragment">
+
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/main_viewPager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
+        android:backgroundTint="@color/system_background"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/main_bottomNavView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <nl.joery.animatedbottombar.AnimatedBottomBar
+        android:id="@+id/main_bottomNavView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/bottom_bar_height"
+        android:background="@color/system_background_darker"
+
+        android:elevation="@dimen/default_elevation"
+        app:abb_tabColorSelected="@color/main_color"
+        app:abb_indicatorColor="@color/main_color_lighter"
+        app:abb_indicatorAppearance="round"
+        app:abb_indicatorHeight="4dp"
+        app:abb_indicatorMargin="16dp"
+        app:abb_selectedIndex="1"
+        app:abb_selectedTabType="text"
+        app:abb_tabs="@menu/main_menu"
+
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--    app:abb_tabColorSelected="@color/main_color"-->
+<!--    app:abb_indicatorColor="@color/main_color_lighter"-->
+<!--    app:abb_indicatorAppearance="round"-->
+<!--    app:abb_indicatorHeight="4dp"-->
+<!--    app:abb_indicatorMargin="16dp"-->
+<!--    app:abb_selectedIndex="1"-->
+<!--    app:abb_selectedTabType="text"-->
+<!--    app:abb_tabs="@menu/main_menu"-->

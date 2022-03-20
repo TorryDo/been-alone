@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".bottomFragment.CustomDatePickerFragment"
+    android:backgroundTint="@color/system_background2"
+    >
+
+    <TextView
+        android:id="@+id/bottomSheet_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="title"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="@dimen/default_title_size"
+        android:textColor="@color/text_color_default"
+
+        app:layout_constraintTop_toTopOf="parent"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+    <NumberPicker
+        android:id="@+id/bottomSheet_numberPicker1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:theme="@style/noDevider"
+
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/bottomSheet_numberPicker2"
+        app:layout_constraintTop_toBottomOf="@id/bottomSheet_title"
+        />
+    <NumberPicker
+        android:id="@+id/bottomSheet_numberPicker2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/noDevider"
+
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintStart_toEndOf="@id/bottomSheet_numberPicker1"
+        app:layout_constraintEnd_toStartOf="@id/bottomSheet_numberPicker3"
+        app:layout_constraintTop_toTopOf="@id/bottomSheet_numberPicker1"
+
+        />
+    <NumberPicker
+        android:id="@+id/bottomSheet_numberPicker3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:theme="@style/noDevider"
+
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/bottomSheet_numberPicker2"
+        app:layout_constraintTop_toTopOf="@id/bottomSheet_numberPicker1"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottomSheet_button_positive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_button_positive"
+        android:text="@string/bottom_button_positive"
+        android:textColor="@color/white"
+
+
+        app:layout_constraintTop_toBottomOf="@id/bottomSheet_numberPicker1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottomSheet_button_negative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="30dp"
+        android:background="@drawable/custom_bottom_negative"
+        android:text="@string/bottom_button_negative"
+        android:textColor="@color/white"
+
+        app:layout_constraintBottom_toBottomOf="@id/bottomSheet_button_positive"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/bottomSheet_button_positive"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

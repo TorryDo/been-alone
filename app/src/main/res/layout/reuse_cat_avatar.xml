@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+
+        android:src="@drawable/cat_cutest"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie_heart"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+
+        app:lottie_rawRes="@raw/heart_with_particles"
+        android:visibility="invisible"
+
+        app:layout_constraintStart_toStartOf="@id/circleImageView"
+        app:layout_constraintEnd_toEndOf="@id/circleImageView"
+        app:layout_constraintTop_toBottomOf="@id/circleImageView"
+        app:layout_constraintBottom_toBottomOf="@id/circleImageView"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

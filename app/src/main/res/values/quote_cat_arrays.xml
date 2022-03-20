@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cat_array">
+        <item name="quote_1">@string/quote_cat_1</item>
+        <item name="quote_2">@string/quote_cat_2</item>
+        <item name="quote_3">@string/quote_cat_3</item>
+        <item name="quote_4">@string/quote_cat_4</item>
+        <item name="quote_5">@string/quote_cat_5</item>
+        <item name="quote_6">@string/quote_cat_6</item>
+    </string-array>
+</resources>
