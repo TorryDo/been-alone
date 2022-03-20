@@ -2,7 +2,7 @@
 count alone day T_T
 
 ## Note
-- This project is finished <b>a long time ago</b>, it is neither clean nor the best reference for study or smth relevant
+- This project was finished <b>a long time ago</b>, it is neither clean nor the best reference for study or smth relevant
 - I created this project for fun, you should not view the source code for the sake of humanity :)
 
 ## Time consuming
