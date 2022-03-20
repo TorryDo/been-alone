@@ -9,6 +9,7 @@ count alone day T_T
 - Mar to Apr (2021)
 
 ## Demo
+- turn audio on for the best experience
 
 https://user-images.githubusercontent.com/85553681/159149210-0e5f6719-88e6-4250-9ce7-5e474cbea562.mp4
 
