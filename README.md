@@ -1,8 +1,7 @@
-# been-alone
-count alone day T_T
+# Been-alone
 
 ## Note
-- This project was finished <b>a long time ago</b>, it is neither clean nor the best reference for study or smth relevant
+- This project was finished `A long time ago`, it is neither clean nor the best reference for study or smth else.
 - I created this project for fun, you should not view the source code for the sake of humanity :)
 
 ## Time consuming
